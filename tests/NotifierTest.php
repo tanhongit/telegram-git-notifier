@@ -1,4 +1,7 @@
 <?php
+/**
+ * @var PHPUnit\Framework\TestCase $this
+ */
 
 use CSlant\TelegramGitNotifier\Notifier;
 

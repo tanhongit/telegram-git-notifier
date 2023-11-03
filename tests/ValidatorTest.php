@@ -1,4 +1,7 @@
 <?php
+/**
+ * @var PHPUnit\Framework\TestCase $this
+ */
 
 use CSlant\TelegramGitNotifier\Bot;
 use CSlant\TelegramGitNotifier\Objects\Validator;
