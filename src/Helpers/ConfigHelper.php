@@ -19,7 +19,7 @@ final class ConfigHelper
     }
 
     /**
-     * Handle config and return value
+     * Handle config and return value.
      *
      * @param string $string
      *
@@ -41,7 +41,7 @@ final class ConfigHelper
     }
 
     /**
-     * Return template data
+     * Return template data.
      *
      * @param string $partialPath
      * @param array $data

@@ -48,7 +48,7 @@ if (!function_exists('tgn_singularity')) {
 
 if (!function_exists('tgn_snake_case')) {
     /**
-     * Convert a string to a snack case
+     * Convert a string to a snack case.
      *
      * @param string $string
      *
@@ -64,7 +64,7 @@ if (!function_exists('tgn_snake_case')) {
 
 if (!function_exists('tgn_event_name')) {
     /**
-     * Get event name
+     * Get event name.
      *
      * @param string $event
      *
@@ -78,7 +78,7 @@ if (!function_exists('tgn_event_name')) {
 
 if (!function_exists('tgn_convert_event_name')) {
     /**
-     * Convert event name
+     * Convert event name.
      *
      * @param string $event
      *
@@ -92,7 +92,7 @@ if (!function_exists('tgn_convert_event_name')) {
 
 if (!function_exists('tgn_convert_action_name')) {
     /**
-     * Convert action name
+     * Convert action name.
      *
      * @param string $action
      *
@@ -107,7 +107,7 @@ if (!function_exists('tgn_convert_action_name')) {
 if (!class_exists('Illuminate\Foundation\Application')) {
     if (!function_exists('config')) {
         /**
-         * Return config value by string
+         * Return config value by string.
          *
          * @param string $string
          *
@@ -121,7 +121,7 @@ if (!class_exists('Illuminate\Foundation\Application')) {
 
     if (!function_exists('view')) {
         /**
-         * Get view template
+         * Get view template.
          *
          * @param string $partialPath
          * @param array $data
@@ -142,7 +142,7 @@ if (!class_exists('Illuminate\Foundation\Application')) {
 
 if (!function_exists('tgn_view')) {
     /**
-     * Get view template
+     * Get view template.
      *
      * @param string $partialPath
      * @param array $data

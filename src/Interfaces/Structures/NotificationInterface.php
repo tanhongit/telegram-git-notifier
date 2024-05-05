@@ -61,7 +61,7 @@ interface NotificationInterface extends AppInterface
 
     /**
      * Convert chat and thread ids to array
-     * Example: 1234567890;1234567890:thread1;1234567890:thread1,thread2
+     * Example: 1234567890;1234567890:thread1;1234567890:thread1,thread2.
      *
      * @param string|null $chatIds
      *
