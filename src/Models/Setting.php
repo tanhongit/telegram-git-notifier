@@ -37,7 +37,7 @@ class Setting
     }
 
     /**
-     * Set settings
+     * Set settings.
      *
      * @return void
      */
@@ -65,7 +65,7 @@ class Setting
     }
 
     /**
-     * Condition for checking the notification status
+     * Condition for checking the notification status.
      *
      * @return bool
      */
@@ -81,7 +81,7 @@ class Setting
     }
 
     /**
-     * Update setting item value and save to file
+     * Update setting item value and save to file.
      *
      * @param string $settingName
      * @param array|string|bool|int|null $settingValue
@@ -116,7 +116,7 @@ class Setting
     }
 
     /**
-     * Save settings to json file
+     * Save settings to json file.
      *
      * @return bool
      */

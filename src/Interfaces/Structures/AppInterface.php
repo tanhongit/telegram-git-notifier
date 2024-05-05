@@ -10,7 +10,7 @@ use CSlant\TelegramGitNotifier\Exceptions\MessageIsEmptyException;
 interface AppInterface
 {
     /**
-     * Send a message to telegram
+     * Send a message to telegram.
      *
      * @param string|null $message
      * @param array $options
@@ -22,7 +22,7 @@ interface AppInterface
     public function sendMessage(?string $message = '', array $options = []): void;
 
     /**
-     * Send a photo to telegram
+     * Send a photo to telegram.
      *
      * @param string $photo (path to photo)
      * @param array $caption
@@ -34,7 +34,7 @@ interface AppInterface
     public function sendPhoto(string $photo = '', array $caption = []): void;
 
     /**
-     * Send callback response to telegram (show alert)
+     * Send callback response to telegram (show alert).
      *
      * @param string|null $text
      * @param array $options
@@ -47,7 +47,7 @@ interface AppInterface
     public function answerCallbackQuery(string $text = null, array $options = []): void;
 
     /**
-     * Edit message text and reply markup
+     * Edit message text and reply markup.
      *
      * @param string|null $text
      * @param array $options
@@ -59,7 +59,7 @@ interface AppInterface
     public function editMessageText(string $text = null, array $options = []): void;
 
     /**
-     * Edit message reply markup from a telegram
+     * Edit message reply markup from a telegram.
      *
      * @param array $options
      *
@@ -70,7 +70,7 @@ interface AppInterface
     public function editMessageReplyMarkup(array $options = []): void;
 
     /**
-     * Get the text from callback message
+     * Get the text from callback message.
      *
      * @return string
      * @see App::getCallbackTextMessage()
@@ -78,7 +78,7 @@ interface AppInterface
     public function getCallbackTextMessage(): string;
 
     /**
-     * Create content for a callback message
+     * Create content for a callback message.
      *
      * @param array $options
      *
@@ -96,7 +96,7 @@ interface AppInterface
     public function setCurrentChatBotId(string $chatId): void;
 
     /**
-     * Get the username of the bot
+     * Get the username of the bot.
      *
      * @return string|null
      * @see App::getBotName()
@@ -104,7 +104,7 @@ interface AppInterface
     public function getBotName(): ?string;
 
     /**
-     * Get the command message from a telegram
+     * Get the command message from a telegram.
      *
      * @return string
      * @see App::getCommandMessage()

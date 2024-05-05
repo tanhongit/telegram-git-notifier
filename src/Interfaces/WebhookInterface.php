@@ -7,7 +7,7 @@ use CSlant\TelegramGitNotifier\Exceptions\WebhookException;
 interface WebhookInterface
 {
     /**
-     * Set the telegram bot token
+     * Set the telegram bot token.
      *
      * @param string $token
      *
@@ -16,7 +16,7 @@ interface WebhookInterface
     public function setToken(string $token): void;
 
     /**
-     * Set app url
+     * Set app url.
      *
      * @param string $url
      *
@@ -25,7 +25,7 @@ interface WebhookInterface
     public function setUrl(string $url): void;
 
     /**
-     * Set webhook for telegram bot
+     * Set webhook for telegram bot.
      *
      * @return string
      * @throws WebhookException
@@ -33,7 +33,7 @@ interface WebhookInterface
     public function setWebhook(): string;
 
     /**
-     * Delete webhook for telegram bot
+     * Delete webhook for telegram bot.
      *
      * @return string
      * @throws WebhookException
@@ -41,7 +41,7 @@ interface WebhookInterface
     public function deleteWebHook(): string;
 
     /**
-     * Get webhook info
+     * Get webhook info.
      *
      * @return string
      * @throws WebhookException
@@ -49,7 +49,7 @@ interface WebhookInterface
     public function getWebHookInfo(): string;
 
     /**
-     * Get webhook update
+     * Get webhook update.
      *
      * @return string
      * @throws WebhookException

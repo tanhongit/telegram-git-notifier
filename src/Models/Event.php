@@ -39,7 +39,7 @@ class Event
     }
 
     /**
-     * Set event config
+     * Set event config.
      *
      * @param string|null $platform
      *
@@ -58,7 +58,7 @@ class Event
     }
 
     /**
-     * Update event config by event and action
+     * Update event config by event and action.
      *
      * @param string $event
      * @param string|null $action
@@ -78,7 +78,7 @@ class Event
     }
 
     /**
-     * Save event config
+     * Save event config.
      *
      * @return void
      */

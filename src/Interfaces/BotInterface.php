@@ -9,7 +9,7 @@ use CSlant\TelegramGitNotifier\Interfaces\Structures\AppInterface;
 interface BotInterface extends AppInterface, EventInterface, SettingInterface
 {
     /**
-     * Set the menu button for a telegram
+     * Set the menu button for a telegram.
      *
      * @param array $menuCommand
      * @param string|null $view
@@ -23,28 +23,29 @@ interface BotInterface extends AppInterface, EventInterface, SettingInterface
     ): void;
 
     /**
-     * Check callback from a telegram
+     * Check callback from a telegram.
      *
      * @return bool
      */
     public function isCallback(): bool;
 
     /**
-     * Check message or command from a telegram
+     * Check message or command from a telegram.
      *
      * @return bool
      */
     public function isMessage(): bool;
 
     /**
-     * Check owner of a telegram
+     * Check owner of a telegram.
      *
      * @return bool
      */
     public function isOwner(): bool;
 
     /**
-     * Check chat id from telegram permission with config
+     * Check chat id from telegram permission with config.
+     *
      * @return bool
      */
     public function isNotifyChat(): bool;

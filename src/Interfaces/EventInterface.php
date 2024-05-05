@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 interface EventInterface
 {
     /**
-     * Get action name of event from payload data
+     * Get action name of event from payload data.
      *
      * @param object $payload
      *
@@ -20,7 +20,7 @@ interface EventInterface
     public function getActionOfEvent(object $payload): string;
 
     /**
-     * Set platform and platform file for event
+     * Set platform and platform file for event.
      *
      * @param string|null $platform
      * @param string|null $platformFile
@@ -31,7 +31,7 @@ interface EventInterface
     public function setPlatFormForEvent(?string $platform = EventConstant::DEFAULT_PLATFORM, ?string $platformFile = null): void;
 
     /**
-     * Set event config and get event name
+     * Set event config and get event name.
      *
      * @param Request $request
      *

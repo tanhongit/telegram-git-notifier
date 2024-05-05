@@ -49,7 +49,7 @@ trait Notification
     }
 
     /**
-     * Set message from payload
+     * Set message from payload.
      *
      * @param string $typeEvent
      *

@@ -21,7 +21,7 @@ class Validator
     }
 
     /**
-     * Validate is access event before send notify
+     * Validate is access event before send notify.
      *
      * @param string $platform Source code platform (GitHub, GitLab)
      * @param string $event Event name (push, pull_request)

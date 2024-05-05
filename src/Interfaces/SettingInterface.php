@@ -12,7 +12,7 @@ use CSlant\TelegramGitNotifier\Trait\EventSettingTrait;
 interface SettingInterface
 {
     /**
-     * Create markup for select event
+     * Create markup for select event.
      *
      * @param string|null $parentEvent
      * @param string $platform
@@ -23,7 +23,7 @@ interface SettingInterface
     public function eventMarkup(?string $parentEvent = null, string $platform = EventConstant::DEFAULT_PLATFORM): array;
 
     /**
-     * Get callback data for markup
+     * Get callback data for markup.
      *
      * @param string $event
      * @param string $platform
@@ -36,7 +36,7 @@ interface SettingInterface
     public function getCallbackData(string $event, string $platform, array|bool $value = false, ?string $parentEvent = null): string;
 
     /**
-     * Get event name for markup
+     * Get event name for markup.
      *
      * @param string $event
      * @param bool|array $value
@@ -47,7 +47,7 @@ interface SettingInterface
     public function getEventName(string $event, bool|array $value): string;
 
     /**
-     * Get end keyboard buttons
+     * Get end keyboard buttons.
      *
      * @param string $platform
      * @param string|null $parentEvent
@@ -58,7 +58,7 @@ interface SettingInterface
     public function getEndKeyboard(string $platform, ?string $parentEvent = null): array;
 
     /**
-     * Handle event callback settings
+     * Handle event callback settings.
      *
      * @param string|null $callback
      * @param string|null $platform
@@ -71,7 +71,7 @@ interface SettingInterface
     public function eventHandle(?string $callback = null, ?string $platform = null): void;
 
     /**
-     * Get the platform from callback
+     * Get the platform from callback.
      *
      * @param string|null $callback
      * @param string|null $platform
@@ -82,7 +82,7 @@ interface SettingInterface
     public function getPlatformFromCallback(?string $callback, ?string $platform): string;
 
     /**
-     * First event settings
+     * First event settings.
      *
      * @param string $platform
      * @param string|null $callback
@@ -96,7 +96,7 @@ interface SettingInterface
     public function sendSettingEventMessage(string $platform, ?string $callback = null, ?string $view = null): bool;
 
     /**
-     * Get event name from callback
+     * Get event name from callback.
      *
      * @param string|null $callback
      *
@@ -106,7 +106,7 @@ interface SettingInterface
     public function getEventFromCallback(?string $callback): string;
 
     /**
-     * Handle event with actions
+     * Handle event with actions.
      *
      * @param string $event
      * @param string $platform
@@ -124,7 +124,7 @@ interface SettingInterface
     ): bool;
 
     /**
-     * Handle event update
+     * Handle event update.
      *
      * @param string $event
      * @param string $platform
@@ -137,7 +137,7 @@ interface SettingInterface
     public function handleEventUpdate(string $event, string $platform): void;
 
     /**
-     * Handle event update
+     * Handle event update.
      *
      * @param string $event
      * @param string $platform
@@ -150,7 +150,7 @@ interface SettingInterface
     public function eventUpdateHandle(string $event, string $platform): void;
 
     /**
-     * Send a setting message
+     * Send a setting message.
      *
      * @param string|null $view
      *
@@ -161,7 +161,7 @@ interface SettingInterface
     public function settingHandle(?string $view = null): void;
 
     /**
-     * Generate setting markup
+     * Generate setting markup.
      *
      * @return array[]
      * @see BotSettingTrait::settingMarkup()

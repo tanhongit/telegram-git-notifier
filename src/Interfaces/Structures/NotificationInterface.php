@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 interface NotificationInterface extends AppInterface
 {
     /**
-     * Notify access denied to other chat ids
+     * Notify access denied to other chat ids.
      *
      * @param string|null $viewTemplate
      * @param string|null $chatId
@@ -25,7 +25,7 @@ interface NotificationInterface extends AppInterface
     ): void;
 
     /**
-     * Set payload from request
+     * Set payload from request.
      *
      * @param Request $request
      * @param string $event
@@ -38,7 +38,7 @@ interface NotificationInterface extends AppInterface
     public function setPayload(Request $request, string $event);
 
     /**
-     * Send notification to telegram
+     * Send notification to telegram.
      *
      * @param string|null $message
      * @param array $options
@@ -50,7 +50,7 @@ interface NotificationInterface extends AppInterface
     public function sendNotify(string $message = null, array $options = []): bool;
 
     /**
-     * Get action name of event from payload data
+     * Get action name of event from payload data.
      *
      * @param object $payload
      *
